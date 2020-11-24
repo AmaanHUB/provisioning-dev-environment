@@ -69,3 +69,16 @@ gem install bundler
 
 * NPM (Node Package Manager)
 	* JS comes pre-loaded after a certain version)
+
+## Running A Bash Script
+
+* Used to install packages, start services, alter files etc within the VM when called
+	* Can be called when vagrant is first started (or with `vagrant reload` etc)
+* Helps set-up machine quickly and in a standardised way to a desirable standard
+
+* Create a bash file with `.sh` as the file extension
+* Let the `Vagrantfile` call this script with:
+```ruby
+  # run a provision script
+  config.vm.provision "shell", path: "environment/provision.sh"
+```
