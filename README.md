@@ -43,10 +43,21 @@ vagrant upload source destination
 bundle install
 ```
 
+* Or just use `bundle` if there is a `Gemfile` present, as this will automatically parse it and install them
+	* Will install them system-wide unless otherwise specified
+
 ## Ruby's Testing Framework (RSpec)
 
+* Install bundler first (don't forget to add gems/ruby to $PATH first if it hasn't automatically)
+```
+gem install bundler
+```
 * Install with a Bundler
+* Creates a Rakefile, can use to say which tests to run and when (from the a something.rb file)
+	* Run with `rake spec` to run the tests
+	* It can check within and outside the virtual machine
 
 ## JS Package Manager
 
 * NPM (Node Package Manager)
+	* JS comes pre-loaded after a certain version)
