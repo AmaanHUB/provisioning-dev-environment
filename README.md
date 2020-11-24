@@ -19,6 +19,7 @@ end
 ## Uploading Files
 
 * Sync a folder or file with the VM on startup
+	* Changes in one makes changes in other :)
 ```ruby
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -31,3 +32,21 @@ end
 ```
 vagrant upload source destination
 ```
+
+## Gems And Bundler Vs Pip And Packages
+
+* Gems are packages in Ruby or dependencies
+* Bundler is Ruby's package manager
+* Gemfile keeps a list of dependencies to be installed (like requirements.txt file in Python)
+* To install gens from the Gemfile, you run:
+```
+bundle install
+```
+
+## Ruby's Testing Framework (RSpec)
+
+* Install with a Bundler
+
+## JS Package Manager
+
+* NPM (Node Package Manager)
